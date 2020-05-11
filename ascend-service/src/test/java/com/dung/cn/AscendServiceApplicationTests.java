@@ -1,6 +1,7 @@
 package com.dung.cn;
 
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

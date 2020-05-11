@@ -9,9 +9,11 @@
         <module name="ascend-service" />
         <module name="ascend-web" />
         <module name="ascend-eureka" />
+        <module name="ascend-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ascend-common" target="1.8" />
       <module name="ascend-eureka" target="1.8" />
       <module name="ascend-service" target="1.8" />
       <module name="ascend-web" target="1.8" />
@@ -20,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ascend-common" options="" />
       <module name="ascend-eureka" options="" />
       <module name="ascend-service" options="" />
       <module name="ascend-web" options="" />
