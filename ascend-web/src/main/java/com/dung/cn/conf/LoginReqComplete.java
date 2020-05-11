@@ -17,8 +17,7 @@ import java.lang.reflect.Method;
 public class LoginReqComplete implements HandlerInterceptor {
     @Autowired
     private RedisUtils redisUtils;
-    @Autowired
-    private WxConfig wxConfig;
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //如果方法上没有添加@LoginRequired注解就不需要登录可以访问的接口，也就意味着不要进入到这个方法中来
@@ -35,7 +34,6 @@ public class LoginReqComplete implements HandlerInterceptor {
             String headerToken = token == null ? wxToken : null;
             if (!StringUtils.isEmpty(headerToken)) {
                 String userToken = (String)redisUtils.get(headerToken);
-                //Object wxToken = redisUtils.get(wxConfig.getAppId());
                 if (StringUtils.isEmpty(userToken)) {
                     throw new RuntimeException("Login error");
                 } else {

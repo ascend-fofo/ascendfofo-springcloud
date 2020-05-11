@@ -1,5 +1,14 @@
 package com.dung.cn.utils;
 
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.EncodeHintType;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -9,16 +18,46 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.security.MessageDigest;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
+@Component
 public class WxPayUtils {
+
+    /**
+     * 日志
+     * @return log
+     */
+    public static Logger getLogger() {
+        return LoggerFactory.getLogger("wxpay java sdk");
+    }
+
+    /**
+     * 根据url生成二维图片对象
+     *
+     * @param codeUrl
+     * @return
+     * @throws WriterException
+     */
+    public static BufferedImage getQRCodeImge(String codeUrl) throws WriterException {
+        Map<EncodeHintType, Object> hints = new Hashtable();
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.M);
+        hints.put(EncodeHintType.CHARACTER_SET, "UTF8");
+        int width = 256;
+        BitMatrix bitMatrix = (new MultiFormatWriter()).encode(codeUrl, BarcodeFormat.QR_CODE, width, width, hints);
+        BufferedImage image = new BufferedImage(width, width, 1);
+        for(int x = 0; x < width; ++x) {
+            for(int y = 0; y < width; ++y) {
+                image.setRGB(x, y, bitMatrix.get(x, y) ? -16777216 : -1);
+            }
+        }
+
+        return image;
+    }
 
     /**
      * 生成签名. 注意，若含有sign_type字段，必须和signType参数保持一致。
@@ -28,6 +67,7 @@ public class WxPayUtils {
      * @return 签名
      */
     public static String generateSignature(final Map<String, String> data, String key){
+        try {
         Set<String> keySet = data.keySet();
         String[] keyArray = keySet.toArray(new String[keySet.size()]);
         Arrays.sort(keyArray);
@@ -40,7 +80,7 @@ public class WxPayUtils {
                 sb.append(k).append("=").append(data.get(k).trim()).append("&");
         }
         sb.append("key=").append(key);
-        try {
+
             return MD5(sb.toString()).toUpperCase();
         }catch (Exception e) {
             e.printStackTrace();
@@ -135,8 +175,13 @@ public class WxPayUtils {
             return data;
         } catch (Exception ex) {
            // WXPayUtil.getLogger().warn("Invalid XML, can not convert to map. Error message: {}. XML content: {}", ex.getMessage(), strXML);
-             ex.printStackTrace();
+            ex.printStackTrace();
         }
         return null;
+    }
+
+    public static boolean isCheckSign(Map<String,String> data,String key,String wxSign){
+        String sign = generateSignature(data,key);
+        return sign.equals(wxSign);
     }
 }
