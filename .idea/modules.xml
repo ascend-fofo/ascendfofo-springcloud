@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ascend-eureka/ascend-eureka.iml" filepath="$PROJECT_DIR$/ascend-eureka/ascend-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-service/ascend-service.iml" filepath="$PROJECT_DIR$/ascend-service/ascend-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-web/ascend-web.iml" filepath="$PROJECT_DIR$/ascend-web/ascend-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascendfofo-springcloud.iml" filepath="$PROJECT_DIR$/ascendfofo-springcloud.iml" />
+    </modules>
+  </component>
+</project>
