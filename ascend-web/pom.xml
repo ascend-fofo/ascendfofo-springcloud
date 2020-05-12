@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>com.dung.cn</groupId>
-            <artifactId>ascend-common</artifactId>
+            <artifactId>ascend-common-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

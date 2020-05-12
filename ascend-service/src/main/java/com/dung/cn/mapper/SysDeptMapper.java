@@ -1,8 +1,10 @@
 package com.dung.cn.mapper;
 
+
+import java.util.List;
+
 import com.dung.cn.dto.SysDept;
 import com.dung.cn.dto.SysDeptExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface SysDeptMapper {

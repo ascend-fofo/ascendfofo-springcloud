@@ -2,10 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ascend-auth/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ascend-common-1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-common/ascend-common-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-common/ascend-common-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-common/ascend-common-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ascend-common/ascend-common-swagger/src/test/java/com/dung/cn/AscendCommonSwaggerApplicationTests.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-service/src/main/resources/generatorConfig.xml" charset="UTF-8" />

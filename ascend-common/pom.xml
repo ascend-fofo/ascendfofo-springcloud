@@ -17,8 +17,12 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Dalston.SR4</spring-cloud.version>
     </properties>
 
+    <modules>
+        <module>ascend-common-core</module>
+        <module>ascend-common-security</module>
+        <module>ascend-common-swagger</module>
+    </modules>
 
 </project>
