@@ -8,27 +8,40 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ascend-service" />
+        <module name="ascend-auth" />
+        <module name="ascend-common-core" />
         <module name="ascend-web" />
-        <module name="ascend-service-1" />
         <module name="ascend-eureka" />
-        <module name="ascend-common" />
+        <module name="ascend-zuul" />
+        <module name="ascend-common-swagger" />
+        <module name="ascend-common-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ascend-auth" target="1.8" />
       <module name="ascend-common" target="1.8" />
+      <module name="ascend-common-core" target="1.8" />
+      <module name="ascend-common-security" target="1.8" />
+      <module name="ascend-common-swagger" target="1.8" />
       <module name="ascend-eureka" target="1.8" />
       <module name="ascend-service" target="1.8" />
       <module name="ascend-service-1" target="1.8" />
       <module name="ascend-web" target="1.8" />
+      <module name="ascend-zuul" target="1.8" />
       <module name="ascendfofo-springcloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ascend-common" options="" />
+      <module name="ascend-auth" options="" />
+      <module name="ascend-common" options="-parameters" />
+      <module name="ascend-common-core" options="" />
+      <module name="ascend-common-security" options="" />
+      <module name="ascend-common-swagger" options="" />
       <module name="ascend-eureka" options="" />
       <module name="ascend-service" options="" />
       <module name="ascend-web" options="" />
+      <module name="ascend-zuul" options="" />
       <module name="ascendfofo-springcloud" options="" />
     </option>
   </component>

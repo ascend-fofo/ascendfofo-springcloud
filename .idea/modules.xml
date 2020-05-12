@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ascend-auth/ascend-auth.iml" filepath="$PROJECT_DIR$/ascend-auth/ascend-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-common/ascend-common.iml" filepath="$PROJECT_DIR$/ascend-common/ascend-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-common/ascend-common-core/ascend-common-core.iml" filepath="$PROJECT_DIR$/ascend-common/ascend-common-core/ascend-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-common/ascend-common-security/ascend-common-security.iml" filepath="$PROJECT_DIR$/ascend-common/ascend-common-security/ascend-common-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-common/ascend-common-swagger/ascend-common-swagger.iml" filepath="$PROJECT_DIR$/ascend-common/ascend-common-swagger/ascend-common-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-eureka/ascend-eureka.iml" filepath="$PROJECT_DIR$/ascend-eureka/ascend-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-service/ascend-service.iml" filepath="$PROJECT_DIR$/ascend-service/ascend-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ascend-service-1/ascend-service-1.iml" filepath="$PROJECT_DIR$/ascend-service-1/ascend-service-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-web/ascend-web.iml" filepath="$PROJECT_DIR$/ascend-web/ascend-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-zuul/ascend-zuul.iml" filepath="$PROJECT_DIR$/ascend-zuul/ascend-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascendfofo-springcloud.iml" filepath="$PROJECT_DIR$/ascendfofo-springcloud.iml" />
     </modules>
   </component>

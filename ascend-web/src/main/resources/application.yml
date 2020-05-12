@@ -2,9 +2,9 @@
 server:
   port: 8081
 
-ascend-springcloud-service:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#ascend-springcloud-service:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 feign:
   hystrix:

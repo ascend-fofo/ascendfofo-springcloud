@@ -7,8 +7,19 @@
         <option value="$PROJECT_DIR$/ascend-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/ascend-service/pom.xml" />
         <option value="$PROJECT_DIR$/ascend-web/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-auth/pom.xml" />
         <option value="$PROJECT_DIR$/ascend-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-common/ascend-common-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-common/ascend-common-security/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-common/ascend-common-core/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ascend-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-service-1/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8.0_121" project-jdk-type="JavaSDK">

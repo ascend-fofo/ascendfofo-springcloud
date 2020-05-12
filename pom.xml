@@ -26,9 +26,9 @@
     <modules>
         <module>ascend-service</module>
         <module>ascend-web</module>
+        <module>ascend-zuul</module>
         <module>ascend-common</module>
-        <module>ascend-service-1</module>
-    </modules>
+</modules>
 
 
 </project>
