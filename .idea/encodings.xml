@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ascend-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ascend-service-1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ascend-web/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ascend-common/ascend-common.iml" filepath="$PROJECT_DIR$/ascend-common/ascend-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-eureka/ascend-eureka.iml" filepath="$PROJECT_DIR$/ascend-eureka/ascend-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-service/ascend-service.iml" filepath="$PROJECT_DIR$/ascend-service/ascend-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ascend-service-1/ascend-service-1.iml" filepath="$PROJECT_DIR$/ascend-service-1/ascend-service-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascend-web/ascend-web.iml" filepath="$PROJECT_DIR$/ascend-web/ascend-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/ascendfofo-springcloud.iml" filepath="$PROJECT_DIR$/ascendfofo-springcloud.iml" />
     </modules>

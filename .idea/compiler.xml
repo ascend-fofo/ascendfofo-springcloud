@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ascend-service" />
         <module name="ascend-web" />
+        <module name="ascend-service-1" />
         <module name="ascend-eureka" />
         <module name="ascend-common" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="ascend-common" target="1.8" />
       <module name="ascend-eureka" target="1.8" />
       <module name="ascend-service" target="1.8" />
+      <module name="ascend-service-1" target="1.8" />
       <module name="ascend-web" target="1.8" />
       <module name="ascendfofo-springcloud" target="1.8" />
     </bytecodeTargetLevel>

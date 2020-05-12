@@ -2,6 +2,14 @@
 server:
   port: 8081
 
+ascend-springcloud-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+feign:
+  hystrix:
+    enabled: true
+
 spring:
   redis:
     host: localhost
