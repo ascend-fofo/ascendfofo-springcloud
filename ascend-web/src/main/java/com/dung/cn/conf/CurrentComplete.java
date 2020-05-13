@@ -1,7 +1,7 @@
 package com.dung.cn.conf;
 
 
-import com.dung.cn.dto.LoginUser;
+import com.dung.cn.entity.LoginUser;
 import org.springframework.core.MethodParameter;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.support.WebDataBinderFactory;

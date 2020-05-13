@@ -17,10 +17,80 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-cloud.version>Dalston.SR4</spring-cloud.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <swagger-bootstrap-ui.version>1.9.3</swagger-bootstrap-ui.version>
+        <fastjson.version>1.2.47</fastjson.version>
+        <google.guava.version>27.1-jre</google.guava.version>
+        <lombok.version>1.18.12</lombok.version>
+        <spring-boot-starter-test.version>1.5.9.RELEASE</spring-boot-starter-test.version>
     </properties>
 
     <dependencies>
-
+        <!-- springfox-swagger2 依赖开始 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger2.version}</version>
+        </dependency>
+        <!-- springfox-swagger2 依赖结束 -->
+        <!-- swaggerui开始 这里相当于给了一层类似于bootstrap的ui界面 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>${swagger-bootstrap-ui.version}</version>
+        </dependency>
+        <!-- swaggerui结束 这里相当于给了一层类似于bootstrap的ui界面-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- fastjson 依赖开始-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <!-- fastjson 依赖结束-->
+        <!-- 番石榴guava 依赖开始 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${google.guava.version}</version>
+        </dependency>
+        <!-- 番石榴guava 依赖结束 -->
+        <!-- spring-cloud-starter-zuul 依赖开始 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
+        </dependency>
+        <!-- spring-cloud-starter-zuul 依赖结束 -->
+        <!-- spring-cloud-starter-eureka 依赖开始 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <!-- spring-cloud-starter-eureka 依赖结束 -->
+        <!-- spring-cloud-starter-eureka-server 依赖开始 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+        <!-- spring-cloud-starter-eureka-server 依赖结束 -->
+        <!-- lombok 依赖开始-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- lombok 依赖结束-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot-starter-test.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <modules>
@@ -28,7 +98,20 @@
         <module>ascend-web</module>
         <module>ascend-zuul</module>
         <module>ascend-common</module>
-</modules>
+        <module>ascend-admin</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>

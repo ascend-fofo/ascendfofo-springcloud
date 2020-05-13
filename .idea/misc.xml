@@ -13,6 +13,9 @@
         <option value="$PROJECT_DIR$/ascend-common/ascend-common-swagger/pom.xml" />
         <option value="$PROJECT_DIR$/ascend-common/ascend-common-security/pom.xml" />
         <option value="$PROJECT_DIR$/ascend-common/ascend-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-admin/ascend-admin-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ascend-admin/ascend-admin-biz/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

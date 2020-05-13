@@ -2,7 +2,7 @@ package com.dung.cn.conf;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.dung.cn.dto.LoginUser;
+import com.dung.cn.entity.LoginUser;
 import com.dung.cn.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
