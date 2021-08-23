@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.10.2</version>
+            <version>1.14.2</version>
         </dependency>
         <!-- com.google.zxing/core 提供image接口  依赖开始-->
         <dependency>
